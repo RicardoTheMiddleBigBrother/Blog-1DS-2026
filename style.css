@@ -1,10 +1,27 @@
+.black-ops-one-regular {
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 :root{/* CSS HEX */
     --quse-preto: #250902ff;
     --vermelho-bem-escurao: #38040eff;
     --cereja-escura: #640d14ff;
     --vermelho-um-pouco-mais-escuro: #800e13ff;
     --marrom-avermelhado: #ad2831ff;
+    --titulo:"black-ops-one-regular";
+    --texto:"black-ops-one, cursive;" 
+
 }
 body{
-    background-color: 
+    background-color:#800e13ff;
+    font-family: var(--texto); 
+}
+h1{
+    font-family: var(--titulo)
+
+
+
+
 }
