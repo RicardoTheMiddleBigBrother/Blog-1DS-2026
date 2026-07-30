@@ -7,7 +7,7 @@
 :root{/* CSS HEX */
     --quse-preto: #250902ff;
     --vermelho-bem-escurao: #38040eff;
-    --cereja-escura: #640d14ff;
+    --escuro-vermelho-escuro: #640d14ff;
     --vermelho-um-pouco-mais-escuro: #800e13ff;
     --marrom-avermelhado: #ad2831ff;
     --titulo:"black-ops-one-regular";
@@ -23,5 +23,9 @@ h1{
 
 
 
+
+}
+header{
+    background-color: #640d14ff;
 
 }
