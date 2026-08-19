@@ -1,44 +1,50 @@
-
-
 *.black-ops-one-regular {
-    font-family: "Black Ops One", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
- 
-:root{/* CSS HEX */
-    --quse-preto: #250902ff;
-    --vermelho-bem-escurao: #38040eff;
-    --escuro-vermelho-escuro: #640d14ff;
-    --vermelho-um-pouco-mais-escuro: #800e13ff;
-    --marrom-avermelhado: #ad2831ff;
-    --chocolate: #e2711dff;
-    --amarelo-legal: #ff9505ff;
-    --amber-flame: #ffb627ff;
-    --sunflower-gold: #ffc971ff;
-    --titulo:"black-ops-one-regular";
-    --texto:"black-ops-one, cursive;"
- 
- 
- }
- 
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
-body{
-background: var(--quse-preto);
-font-family: var(--texto);
+:root {
+  /* CSS HEX */
+  --quse-preto: #250902ff;
+  --vermelho-bem-escurao: #38040eff;
+  --escuro-vermelho-escuro: #640d14ff;
+  --vermelho-um-pouco-mais-escuro: #800e13ff;
+  --marrom-avermelhado: #ad2831ff;
+  --chocolate: #e2711dff;
+  --amarelo-legal: #ff9505ff;
+  --amber-flame: #ffb627ff;
+  --sunflower-gold: #ffc971ff;
+  --titulo: "black-ops-one-regular";
+  --texto: "black-ops-one, cursive;"
+
+
 }
-header{
-background-color: var(--vermelho-um-pouco-mais-escuro);
-display: flex;
-justify-content: space-around;
-color: var(--chocolate);
+*{
+  margin: 0;
+  padding: 0;
 }
-.menu{
-display: flex;
-list-style: none;
-gap: 20px;
-margin: 10px;
-color: var(--chocolate);
-text-transform: uppercase"black-ops-one, cursive;";
-font-size: 14px;
+
+
+body {
+  background: var(--quse-preto);
+  font-family: var(--texto);
+}
+
+header {
+  background-color: var(--vermelho-um-pouco-mais-escuro);
+  display: flex;
+  justify-content: space-around;
+  color: var(--chocolate);
+  padding: 30
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 10px;
+  color: var(--chocolate);
+  text-transform: uppercase"black-ops-one, cursive;";
+  font-size: 14px;
 }
