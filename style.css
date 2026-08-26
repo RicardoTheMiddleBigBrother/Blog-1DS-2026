@@ -22,7 +22,7 @@
 }
 *{
   margin: 0;
-  padding: 0;
+  padding: 10;
 }
 
 
@@ -38,13 +38,21 @@ header {
   color: var(--chocolate);
   padding: 30
 }
+.menu a:hover{
+  color: var(--sunflower-gold);
+  transition: 1s
 
+}
 .menu {
   display: flex;
   list-style: none;
   gap: 20px;
-  margin: 10px;
+  margin: 20px;
   color: var(--chocolate);
   text-transform: uppercase"black-ops-one, cursive;";
   font-size: 14px;
-}
+  }
+  .img-ruina-icon-Thumb.webp.png{
+    width: 100%;
+    height: auto;
+  }
