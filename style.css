@@ -1,20 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Montserrat:wght@400;600&display=swap');
-
 :root {
-  /* Paleta de Cores do Polegar (The Thumb) */
-  --bg-principal: #111113;       /* Preto/Grafite escuro e solene */
-  --bg-card: #1b1b1e;            /* Tom levemente mais claro para destaques */
-  --header-bg: #09090a;          /* Preto profundo para o cabeçalho */
-  --dourado-thumb: #d4af37;      /* Dourado para hierarquia e adornos */
-  --vermelho-thumb: #800e13;     /* Vermelho bordô militar */
-  --texto-claro: #e6e6e6;        /* Branco suave para leitura */
-  --texto-mutado: #a0a0a0;       /* Cinza para detalhes secundários */
+  --bg-principal: #111113;      
+  --bg-card: #1b1b1e;          
+  --header-bg: #09090a;         
+  --dourado-thumb: #d4af37;     
+  --vermelho-thumb: #800e13;    
+  --texto-claro: #e6e6e6;       
+  --texto-mutado: #a0a0a0;      
   
-  /* Tipografia imponente */
   --font-titulo: 'Cinzel', serif;
   --font-corpo: 'Montserrat', sans-serif;
 }
 
+/* Reset Global */
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +27,7 @@ body {
   flex-direction: column;
 }
 
-/* Header */
+/* Cabeçalho */
 header {
   background-color: var(--header-bg);
   display: flex;
@@ -47,7 +44,6 @@ header {
   font-size: 24px;
 }
 
-/* Menu de navegação */
 .menu {
   display: flex;
   list-style: none;
@@ -68,15 +64,20 @@ header {
   color: var(--dourado-thumb);
 }
 
-/* Conteúdo Principal */
+/* Layout Container */
 .container {
   flex: 1;
   max-width: 900px;
-  margin: 50px auto;
+  margin: 40px auto;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Hero Section */
 .hero {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,6 +87,7 @@ header {
   border-radius: 4px;
   border: 1px solid rgba(212, 175, 55, 0.2);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  margin-bottom: 40px;
 }
 
 .img-banner {
@@ -99,9 +101,112 @@ header {
   padding: 10px;
 }
 
+.secao-titulo {
+  font-family: var(--font-titulo);
+  color: var(--dourado-thumb);
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+/* Seção de Notícias / Cards */
+.noticias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 4px;
+  padding: 20px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid var(--vermelho-thumb);
+}
+
+.card h3 {
+  font-family: var(--font-titulo);
+  color: var(--dourado-thumb);
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  color: var(--texto-mutado);
+  line-height: 1.5;
+}
+
+.botoes {
+  display: flex;
+  gap: 10px;
+}
+
+.botoes button {
+  background-color: var(--header-bg);
+  border: 1px solid var(--dourado-thumb);
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s ease;
+}
+
+.botoes button:hover {
+  background-color: var(--vermelho-thumb);
+}
+
+.card a {
+  color: var(--dourado-thumb);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Conteúdo Detalhado (Página 2) */
+.img-capa {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  background-color: #ffffff;
+  padding: 15px;
+  border: 2px solid var(--vermelho-thumb);
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+
+.conteudo {
+  background-color: var(--bg-card);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 30px;
+  text-align: center;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
 .conteudo-titulo {
   font-family: var(--font-titulo);
-  font-size: 28px;
+  font-size: 24px;
   margin-bottom: 15px;
   color: var(--dourado-thumb);
   text-transform: uppercase;
@@ -112,10 +217,27 @@ header {
   font-size: 15px;
   color: var(--texto-mutado);
   line-height: 1.6;
-  max-width: 600px;
 }
 
-/* Footer */
+.btn-voltar {
+  display: inline-block;
+  background-color: var(--vermelho-thumb);
+  color: var(--texto-claro);
+  padding: 10px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 1px solid var(--dourado-thumb);
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.btn-voltar:hover {
+  background-color: var(--dourado-thumb);
+  color: var(--header-bg);
+}
+
+/* Rodapé */
 footer {
   background-color: var(--header-bg);
   text-align: center;
