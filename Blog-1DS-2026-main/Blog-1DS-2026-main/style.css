@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+ 
+  --bg-principal: #111113;       
+  --bg-card: #1b1b1e;           
+  --header-bg: #09090a;          
+  --dourado-thumb: #d4af37;      
+  --vermelho-thumb: #800e13;     
+  --texto-claro: #e6e6e6;        
+  --texto-mutado: #a0a0a0;       
+  
+  
+  --font-titulo: 'Cinzel', serif;
+  --font-corpo: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-principal);
+  color: var(--texto-claro);
+  font-family: var(--font-corpo);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+header {
+  background-color: var(--header-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  border-bottom: 2px solid var(--dourado-thumb);
+}
+
+.logo h2 {
+  font-family: var(--font-titulo);
+  color: var(--dourado-thumb);
+  letter-spacing: 3px;
+  font-size: 24px;
+}
+
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.menu a {
+  color: var(--texto-claro);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  color: var(--dourado-thumb);
+}
+
+
+.container {
+  flex: 1;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: var(--bg-card);
+  padding: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+.img-banner {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 4px;
+  border: 2px solid var(--vermelho-thumb);
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.conteudo-titulo {
+  font-family: var(--font-titulo);
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: var(--dourado-thumb);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.conteudo-texto {
+  font-size: 15px;
+  color: var(--texto-mutado);
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+
+footer {
+  background-color: var(--header-bg);
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+  font-size: 12px;
+  color: var(--texto-mutado);
+}

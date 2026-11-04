@@ -1,19 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Montserrat:wght@400;600&display=swap');
-
 :root {
- 
-  --bg-principal: #111113;       
-  --bg-card: #1b1b1e;           
-  --header-bg: #09090a;          
-  --dourado-thumb: #d4af37;      
-  --vermelho-thumb: #800e13;     
-  --texto-claro: #e6e6e6;        
-  --texto-mutado: #a0a0a0;       
-  
+  --bg-principal: #111113;      
+  --bg-card: #1b1b1e;          
+  --header-bg: #09090a;         
+  --dourado-thumb: #d4af37;     
+  --vermelho-thumb: #800e13;    
+  --texto-claro: #e6e6e6;       
+  --texto-mutado: #a0a0a0;      
   
   --font-titulo: 'Cinzel', serif;
   --font-corpo: 'Montserrat', sans-serif;
 }
+
 
 * {
   margin: 0;
@@ -47,7 +44,6 @@ header {
   font-size: 24px;
 }
 
-
 .menu {
   display: flex;
   list-style: none;
@@ -72,11 +68,16 @@ header {
 .container {
   flex: 1;
   max-width: 900px;
-  margin: 50px auto;
+  margin: 40px auto;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+
 .hero {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,6 +87,7 @@ header {
   border-radius: 4px;
   border: 1px solid rgba(212, 175, 55, 0.2);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  margin-bottom: 40px;
 }
 
 .img-banner {
@@ -99,9 +101,121 @@ header {
   padding: 10px;
 }
 
+.secao-titulo {
+  font-family: var(--font-titulo);
+  color: var(--dourado-thumb);
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+
+.noticias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 4px;
+  padding: 20px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+.card:hover{
+  background-color:var(--texto-mutado);
+  color:var(--bg-card);
+  border-color:var(--dourado-thumb); 
+  transition: backgrond-color 0.5s, color 0.5s, boder-color 0.5s;
+  box-shadow: 0px 4px 8px var(--texto-mutado);
+
+
+
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid var(--vermelho-thumb);
+}
+
+.card h3 {
+  font-family: var(--font-titulo);
+  color: var(--dourado-thumb);
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  color: var(--texto-mutado);
+  line-height: 1.5;
+}
+
+.botoes {
+  display: flex;
+  gap: 10px;
+}
+
+.botoes button {
+  background-color: var(--header-bg);
+  border: 1px solid var(--dourado-thumb);
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s ease;
+}
+
+.botoes button:hover {
+  background-color: var(--vermelho-thumb);
+}
+
+.card a {
+  color: var(--dourado-thumb);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+
+.img-capa {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  background-color: #ffffff;
+  padding: 15px;
+  border: 2px solid var(--vermelho-thumb);
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+
+.conteudo {
+  background-color: var(--bg-card);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 30px;
+  text-align: center;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
 .conteudo-titulo {
   font-family: var(--font-titulo);
-  font-size: 28px;
+  font-size: 24px;
   margin-bottom: 15px;
   color: var(--dourado-thumb);
   text-transform: uppercase;
@@ -112,9 +226,25 @@ header {
   font-size: 15px;
   color: var(--texto-mutado);
   line-height: 1.6;
-  max-width: 600px;
 }
 
+.btn-voltar {
+  display: inline-block;
+  background-color: var(--vermelho-thumb);
+  color: var(--texto-claro);
+  padding: 10px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 1px solid var(--dourado-thumb);
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.btn-voltar:hover {
+  background-color: var(--dourado-thumb);
+  color: var(--header-bg);
+}
 
 footer {
   background-color: var(--header-bg);
